@@ -40,6 +40,16 @@
   padding: 0;
 }
 
+input, button {
+    -webkit-appearance: none; /* Для Safari/Chrome */
+    -moz-appearance: none;    /* Для Firefox */
+    appearance: none;         /* Современный стандарт */
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
 li{
     list-style-type: none;
 }
@@ -117,8 +127,73 @@ li{
 .sidebar__list--bottom{
     margin-top: 6rem;
 }
-
+.header{
+    font-family: 'manropemedium';
+}
 .header__icon{
-    height: 1.3rem;
+    height: 1.5rem;
     width: auto;
+}
+
+.header__top,
+.header__bottom{
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0.7rem 1.5rem;
+}
+
+.header__avatar{
+    width: auto;
+    fill: var(--accent-color);
+}
+
+.header__avatar--large{
+    height: 4rem;
+}
+
+.header__avatar--small{
+    height: 2rem;
+}
+
+.header__icon-notification{
+    margin-left: auto;
+}
+
+#header__input{
+    height: 1.5rem;
+    width: 40vw;
+    border-radius: 8px;
+    flex-shrink: 1;
+    padding: 0.2rem;
+    background-color: var(--main-bg-color);
+}
+
+.header__user-greeting{
+    font-size: 0.65rem;
+}
+
+.header__user-name--large{
+    font-size: 1.1rem;
+}
+
+.header__user-name--small{
+    font-size: 0.9rem;
+}
+
+.header__actions{
+    margin-left: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.btn{
+    border-radius: 18px;
+    background-color: var(--sidebar-bg-color);
+    color: var(--color-base);
+    height: 2rem;
+    width: 5rem;
+    flex-shrink: 1;
 }
