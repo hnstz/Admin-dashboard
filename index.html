@@ -58,7 +58,7 @@
                     <title>view-dashboard</title>
                     <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
                 </svg>
-                <h3>Dashboard</h3>
+                <h1>Dashboard</h1>
             </div>
 
             <nav>
@@ -135,11 +135,11 @@
 
         <main class="main">
             <section class="main__projects">
-                <h4 class="projects__header">Your projects</h4>
-                <ul class="projects__grid">
-                    <li class="projects__item">
+                <h2 class="main__title projects__header">Your projects</h2>
+                <ul class="projects__list">
+                    <li class="main__card projects__item">
                         <article class="card">
-                            <h5 class="card__title">Project 1</h5>
+                            <h3 class="card__title">Project 1</h3>
                             <p class="card__text">Lorem, ipsum dolor
                                 hic magni et unde, quaerat consequatur repellendus?</p>
                             <footer>
@@ -161,9 +161,9 @@
                             </footer>
                         </article>
                     </li>
-                    <li class="projects__item">
+                    <li class="main__card projects__item">
                         <article class="card">
-                            <h5 class="card__title">Project 2</h5>
+                            <h3 class="card__title">Project 2</h3>
                             <p class="card__text">Lorem ipsum dolor sit amet,
                                 illum tempore molestias id rem deserunt labore. Nihil, corporis.</p>
                             <footer>
@@ -185,9 +185,9 @@
                             </footer>
                         </article>
                     </li>
-                    <li class="projects__item">
+                    <li class=" main__card projects__item">
                         <article class="card">
-                            <h5 class="card__title">App 1</h5>
+                            <h3 class="card__title">App 1</h3>
                             <p class="card__text">Lorem, ipsum dolor sit
                                 dolore sunt quae exercitationem pariatur! Illo, saepe.</p>
                             <footer>
@@ -209,9 +209,9 @@
                             </footer>
                         </article>
                     </li>
-                    <li class="projects__item">
+                    <li class="main__card projects__item">
                         <article class="card">
-                            <h5 class="card__title">App 2</h5>
+                            <h3 class="card__title">App 2</h3>
                             <p class="card__text">Lorem ipsum dolor
                                 veritatis dolore provident minima alias.</p>
                             <footer>
@@ -233,9 +233,9 @@
                             </footer>
                         </article>
                     </li>
-                    <li class="projects__item">
+                    <li class="main__card projects__item">
                         <article class="card">
-                            <h5 class="card__title">Ad Blocker</h5>
+                            <h3 class="card__title">Ad Blocker</h3>
                             <p class="card__text">Lorem ipsum dolor nulla.
                                 Dolorem accusamus molestias, odit quasi sit ab alias ducimus.</p>
                             <footer>
@@ -257,9 +257,9 @@
                             </footer>
                         </article>
                     </li>
-                    <li class="projects__item">
+                    <li class="main__card projects__item">
                         <article class="card">
-                            <h5 class="card__title">Money Maker</h5>
+                            <h3 class="card__title">Money Maker</h3>
                             <p class="card__text">Lorem ipsum dolor. Adipisci non
                                 obcaecati tenetur minus! Facilis officia ab quis corrupti.</p>
                             <footer>
@@ -285,49 +285,68 @@
             </section>
 
             <section class="main__announcements">
-                <h2 class="announcements__title">Announcements</h2>
-                <ul class="announcements__list">
+                <h2 class="main__title announcements__header">Announcements</h2>
+                <ul class="main__card announcements__list">
                     <li class="announcements__item">
-                        <article class="announcements__article">Site Maintenance
-                            Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.
-                            Donec hendrerit sodales congue...
+                        <article class="announcements__article">
+                            <h4 class="announcement__article-subheader">Site Maintenance</h4>
+                            <p class="announcement__article_content">
+                                Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.
+                                Donec hendrerit sodales congue...
+                            </p>
+                        </article>
+                    </li>
+                    <li class="announcements__item">
+                        <article class="announcements__article announcements__article-center">
+                            <h4 class="announcement__article-subheader">Community Share Day</h4>
+                            <p class="announcement__article_content">
+                                Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
+                                Aliquam dictum accumsan porttitor...
+                            </p>
                         </article>
                     </li>
                     <li class="announcements__item">
                         <article class="announcements__article">
-                            Community Share Day
-                            Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. 
-                            Aliquam dictum accumsan porttitor...
-                        </article>
-                    </li>
-                    <li class="announcements__item">
-                        <article class="announcements__article">
-                            Updated Privacy Policy
-                            Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla
-                            sagittis sem in mattis...
+                            <h4 class="announcement__article-subheader">Updated Privacy Policy</h4>
+                            <p class="announcement__article_content">
+                                Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla
+                                sagittis sem in mattis...
+                            </p>
                         </article>
                     </li>
                 </ul>
             </section>
 
             <section class="main__trending">
-                <h2 class="trending__title">Trending</h2>
-                <ul class="trending__list">
+                <h2 class="main__title trending__header">Trending</h2>
+                <ul class="main__card trending__list">
                     <li class="trending__item">
                         <svg  class="trending__user-avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-circle-outline</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" /></svg>
-                        <span class="trending__user-name"></span><span class="tranding__user-status"></span>
+                        <div class="trending__user-info">
+                            <span class="trending__user-name">@userName1</span>
+                            <span class="trending__user-status">Some words about user 1</span>
+                        </div>
                     </li>
                     <li class="trending__item">
                         <svg  class="trending__user-avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-circle-outline</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" /></svg>
-                        <span class="trending__user-name"></span><span class="tranding__user-status"></span>
+                        <div class="trending__user-info">
+                            <span class="trending__user-name">@userName2</span>
+                            <span class="trending__user-status">Some words about user2</span>
+                        </div>
                     </li>
                     <li class="trending__item">
                         <svg  class="trending__user-avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-circle-outline</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" /></svg>
-                        <span class="trending__user-name"></span><span class="tranding__user-status"></span>
+                        <div class="trending__user-info">
+                            <span class="trending__user-name">@userName3</span>
+                            <span class="trending__user-status">Some words about user3</span>
+                        </div>
                     </li>
                     <li class="trending__item">
-                    <svg  class="trending__user-avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-circle-outline</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" /></svg>
-                        <span class="trending__user-name"></span><span class="tranding__user-status"></span>
+                        <svg  class="trending__user-avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-circle-outline</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" /></svg>
+                        <div class="trending__user-info">
+                            <span class="trending__user-name">@userName4</span>
+                            <span class="trending__user-status">Some words about user4</span>
+                        </div>
                     </li>
                 </ul>
             </section>
