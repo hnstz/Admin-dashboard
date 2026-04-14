@@ -359,3 +359,64 @@ footer > svg{
     flex-wrap: nowrap;
     gap: 5px;
 }
+
+@media (max-width: 1068px) {
+    .layout {
+        grid-template-columns: 80px 1fr; 
+    }
+
+    .sidebar {
+        padding: 1.4rem 0;
+        align-items: center;
+    }
+
+    .sidebar__logo h1,
+    .sidebar__text {
+        display: none; 
+    }
+
+    .sidebar__icon_main {
+        margin: 0;
+    }
+
+    .main {
+        grid-template-areas: 
+            "projects"
+            "announcements"
+            "trending";
+        grid-template-columns: 1fr;
+    }
+
+    .main__announcements,
+    .main__trending {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .projects__item {
+        max-width: 100%;
+    }
+
+    #header__input {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects__list {
+        grid-template: auto / 1fr; 
+    }
+
+    .header__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .header__actions {
+        margin-left: 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
